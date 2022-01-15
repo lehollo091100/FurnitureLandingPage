@@ -1,0 +1,94 @@
+.reason{
+    padding: 120px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .title1{
+        width: 25%;
+        span{
+            max-width: 242px;
+        }
+    }
+    .row{
+        width: 75%;
+        .reason__item{
+            &-title{
+                font-size: 24px;
+                font-weight: bold;
+                opacity: 0.9;
+            }
+            &-detail{
+                margin-top: 20px;
+                font-size: 16px;
+                line-height: 185%;
+                opacity: 0.8;
+            }
+            &-more{
+                cursor: pointer;
+                margin-top: 14px;
+                font-size: 14px;
+                color:$more-color;
+                i{
+                    margin-left: 13px;
+                    transition: all .2s linear;
+                }
+                :hover i{
+                    transform: translateX(5px);
+                }
+            }
+        }
+    }
+}
+
+@include responsive_425{
+    .reason
+    {
+        .title1{
+            width: 100%;
+            text-align: center;
+            span{
+                max-width: none;
+            }
+        }
+        .row{
+            width: 100%;
+        }
+    }
+}
+@include responsive_768{
+    .reason
+    {
+        .title1{
+            width: 100%;
+            text-align: center;
+            span{
+                max-width: none;
+            }
+        }
+
+        .row{
+            width: 100%;
+        }
+    }
+}
+@include  responsive_1024{
+    .reason
+    {
+        .title1{
+            width: 100%;
+            text-align: center;
+            span{
+                max-width: none;
+            }
+        }
+        .row{
+            width: 100%;
+        }
+    }
+}
+@include responsive_1025{
+}
