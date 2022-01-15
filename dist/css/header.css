@@ -1,0 +1,26 @@
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.header__logo {
+  display: inline-block;
+  color: red;
+}
+
+.header__menu {
+  display: inline-block;
+}
+
+.header__notification {
+  display: inline-block;
+}
+/*# sourceMappingURL=header.css.map */

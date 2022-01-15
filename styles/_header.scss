@@ -1,0 +1,36 @@
+@import './mixins.scss';
+.header{
+    color: white;
+    position: absolute;
+    top:40px;
+    width: 100%;
+    z-index: 2;
+    .container{
+        @include flexCenter;
+    }
+    &__logo{
+        cursor: pointer;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+    }
+    &__menu{
+        display: inline-block;
+        &-item{
+            
+            cursor: pointer;
+            font-size: 18px;
+            line-height: 21px;
+            margin-right: 65px;
+            i{
+                margin: auto 0px auto 10px;
+                font-size: 12px;
+            }
+        }
+    }
+    &__notification{
+        display: inline-block;
+        cursor: pointer;
+    }
+}
