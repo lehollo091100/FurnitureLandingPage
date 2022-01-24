@@ -1,0 +1,78 @@
+.testimonial{
+    padding: 120px 0;
+    & .heading{
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.175em;
+        text-transform: uppercase;
+        color: $more-color;
+    }
+    & .title1{
+        text-align: center;
+        margin-top: 20px;
+    }
+    & .testimonial__list{
+        // overflow: hidden;
+        margin-top: 60px;
+        & .testimonial__list-item{
+            // margin: 0 20px;
+            cursor: pointer;
+            width: 370px;
+            height: 470px;
+            background-size: cover;
+            position: relative;
+            border-radius: 18px;
+            padding: 18px;
+            display: flex;
+            align-items: flex-end;
+            & .testi__detail{
+                position: relative;
+                background: white;
+                width: 100%;
+                border-radius: 18px;
+                padding: 0 40px;
+                text-align: center;
+                & .testi__detail-name{
+                    margin-top: 38px;
+                    font-size: 18px;
+                    line-height: 21px;
+                    font-weight: bold;
+                }
+                & .testi__detail-subname{
+                    font-size: 12px;
+                    line-height: 14px;
+                    opacity: 0.6;
+                    margin-top: 6px;
+                }
+                & .testi__detail-comment{
+                    font-size: 14px;
+                    line-height: 16px;
+                    opacity: 0.8;
+                    margin-top: 22px;
+                }
+                & .testi__detail-rate{
+                    margin-top: 22px;
+                    margin-bottom: 17px;
+                    display: inline-block;
+                    i{
+                        color: $more-color;
+                        
+                    }
+                }
+                & .testi__detail-avatar{
+                    position: absolute;   
+                    top:0;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 70px;
+                    height: 70px;
+                    object-fit: cover;
+                    border: 8px solid white;
+                    border-radius: 50%;
+                }
+            }
+            
+        }
+    }
+}

@@ -5,10 +5,14 @@
 @import './reason';
 @import './product';
 @import './experience';
+@import './material';
+@import './testimonial';
+@import './footer';
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 html{
     // font-size: 62.5%;//1rem=10px
@@ -74,6 +78,7 @@ a{
         width: 100%;
         & h1{
             max-width: none;
+            font-size: 36px;
         }
     }
 }
@@ -82,6 +87,7 @@ a{
         width: 100%;
         & h1{
             max-width: none;
+            font-size: 36px;
         }
     }
 }
