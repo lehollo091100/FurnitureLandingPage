@@ -75,3 +75,28 @@
         }
     }
 }
+
+
+@include responsive_425{
+    .footer .footer__wrapper{
+        & .top{
+            flex-wrap: wrap;
+            & .footer__introduce{
+                width:100%;
+
+            }
+            & .footer__list{
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
+    }
+}
+@include responsive_768{
+    
+}
+@include  responsive_1024{
+    
+}
+@include responsive_1025{
+}

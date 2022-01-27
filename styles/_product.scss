@@ -1,6 +1,7 @@
 .product{
     background: $background-color;
     padding: 50px 0;
+    overflow: hidden;
     .title1{
         text-align: center;
     }
@@ -130,6 +131,7 @@
             position: absolute;
             right: -40px;
             top:50%;
+            transform: translateY(-50%);
         }
         & button{
             span{

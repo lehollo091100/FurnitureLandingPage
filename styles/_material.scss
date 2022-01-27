@@ -6,6 +6,7 @@
         @include flexCenter;
         flex-wrap: wrap;
         padding: 120px 0;
+        overflow: hidden;
         & .detail__wrapper{
             padding-left: 5%;
         }
@@ -31,45 +32,61 @@
 
 @include responsive_425{
     .material{
-        & .image__wrapper{
-            margin-top: 40px;
-            width:100%;
-            @include flexCenter;
-            & img{
-                border-radius: 20px;
+        & .material__wrapper{
+
+            & .image__wrapper{
+                margin-top: 40px;
+                width:100%;
+                @include flexCenter;
+                flex-direction: column;
+                & img{
+                    border-radius: 20px;
+                }
+                & .left{
+                    max-width: 100%;
+                }
+                & .right{
+                    max-width: 100%;
+                    & .img1{
+                        width: 100%;
+                        height: 425px;
+                    }
+                }
+                
             }
-            & .img1{
-                width: 100%;
-                height: 425px;
-            }
-            
         }
     }
 }
 @include responsive_768{
     .material{
-        & .image__wrapper{
-            margin-top: 40px;
-            width:100%;
-            @include flexCenter;
-            & img{
-                border-radius: 20px;
+        & .material__wrapper{
+            & .image__wrapper{
+                margin-top: 40px;
+                width:100%;
+                @include flexCenter;
+                flex-direction: column;
+                & img{
+                    border-radius: 20px;
+                }
+                & .left{
+                    max-width: 100%;
+                    justify-content: space-between;
+                    & .img2{
+                        width: 50%;
+                    }
+                    & .img3{
+                        width: 50%;
+                    }
+                }
+                & .right{
+                    max-width: 100%;
+                    & .img1{
+                        width: 100%;
+                        height: 425px;
+                    }
+                }
+                
             }
-            & .left{
-                @include flexCenter
-                width: 100%;
-            }
-            & .img1{
-                width: 100%;
-                height: 425px;
-            }
-            & .img2{
-                width: 50%;
-            }
-            & .img3{
-                width: 50%;
-            }
-            
         }
     }
 
